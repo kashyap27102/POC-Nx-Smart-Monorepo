@@ -14,7 +14,9 @@ export function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('http://localhost:3333/courses');
+        const res = await fetch(
+          `${import.meta.env.VITE_SERVER_BASE_URL}/courses`
+        );
         const result = await res.json();
         setCourses(result.data);
       } catch (error) {

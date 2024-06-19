@@ -1,6 +1,6 @@
 export const getSkills = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST_NAME}/skills`);
+    const res = await fetch(`${process.env.SERVER_BASE_URL}/skills`);
     const result = await res.json();
     return result.data;
   } catch (error) {
@@ -10,7 +10,7 @@ export const getSkills = async () => {
 
 export const getSoftSkills = async () => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST_NAME}/soft-skills`);
+    const res = await fetch(`${process.env.SERVER_BASE_URL}/soft-skills`);
     const result = await res.json();
     return result.data;
   } catch (error) {
