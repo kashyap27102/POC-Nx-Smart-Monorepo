@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../../node_modules/prisma/client"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Skill {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  category String
+  level    String
+  status   String
+}
+
+model SoftSkill {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  category String
+  level    String
+  status   String
+}
+
+model Course {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  category String
+  progress Int
+}

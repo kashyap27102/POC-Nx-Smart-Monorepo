@@ -1,0 +1,8 @@
+{
+  "name": "simform-skill-matrix",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/simform-skill-matrix",
+  "projectType": "application",
+  "tags": [],
+  "targets": {}
+}
