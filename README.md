@@ -43,18 +43,18 @@ Create `.env` file in root folder of project
 DATABASE_URL=<YOUR_MONGODB_CLOUD_URL>
 ```
 
+start daemon process
+
+```
+npx nx daemon
+```
+
 Run following commands for set-up database schema and seed testing data
 
 ```
 npx nx run prisma-schema:generate-types
 npx nx run prisma-schema:db-push
 npx nx run prisma-schema:seed
-```
-
-start daemon process
-
-```
-npx nx daemon
 ```
 
 ## Start Application
