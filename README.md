@@ -46,9 +46,9 @@ DATABASE_URL=<YOUR_MONGODB_CLOUD_URL>
 Run following commands for set-up database schema and seed testing data
 
 ```
-npx nx prisma-schema:generate-types
-npx nx prisma-schema:db-push
-npx nx prisma-schema:seed
+npx nx run prisma-schema:generate-types
+npx nx run prisma-schema:db-push
+npx nx run prisma-schema:seed
 ```
 
 start daemon process
