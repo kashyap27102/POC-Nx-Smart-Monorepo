@@ -51,6 +51,12 @@ npx nx prisma-schema:db-push
 npx nx prisma-schema:seed
 ```
 
+start daemon process
+
+```
+npx nx daemon
+```
+
 ## Start Application
 
 ### 1. Simform-server (Common Server)
