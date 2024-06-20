@@ -37,7 +37,7 @@ Install node-modules
 npm install
 ```
 
-Create `.env` file in `lib/prisma-schema` folder of project
+Create `.env` file in root folder of project
 
 ```
 DATABASE_URL=<YOUR_MONGODB_CLOUD_URL>
