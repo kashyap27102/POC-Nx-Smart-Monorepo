@@ -17,7 +17,7 @@ app.get('/api', (req, res) => {
   res.send({ message: 'Welcome to simform-server!' });
 });
 
-app.get('/skills', async (req, res) => {
+app.get('/api/skills', async (req, res) => {
   try {
     const skills = await prismaClient.skill.findMany();
     res.send({
@@ -29,7 +29,7 @@ app.get('/skills', async (req, res) => {
   }
 });
 
-app.get('/soft-skills', async (req, res) => {
+app.get('/api/soft-skills', async (req, res) => {
   try {
     const softSkills = await prismaClient.softSkill.findMany();
     res.send({
@@ -41,7 +41,7 @@ app.get('/soft-skills', async (req, res) => {
   }
 });
 
-app.get('/courses', async (req, res) => {
+app.get('/api/courses', async (req, res) => {
   try {
     const courses = await prismaClient.course.findMany();
     res.send({
